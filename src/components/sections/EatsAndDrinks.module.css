@@ -1,0 +1,92 @@
+.grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.25rem;
+	margin-bottom: 3.5rem;
+}
+
+@media (min-width: 640px) {
+	.grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (min-width: 1024px) {
+	.grid {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 0.65rem;
+	padding: 1.4rem 1.25rem;
+	background: rgba(255, 255, 255, 0.55);
+	border: 1px solid var(--rr-fog);
+	border-radius: 14px;
+	transition: border-color 200ms ease;
+}
+
+.card:hover {
+	border-color: rgba(47, 62, 50, 0.25);
+}
+
+.cardTop {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 0.75rem;
+	flex-wrap: wrap;
+}
+
+.name {
+	margin: 0;
+	font-family: Fraunces, Georgia, serif;
+	font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 1.25;
+	color: var(--rr-forest);
+}
+
+.description {
+	margin: 0;
+	font-size: 0.975rem;
+	line-height: 1.65;
+	color: var(--rr-charcoal);
+}
+
+.subheading {
+	margin: 0 0 0.5rem;
+	font-family: Fraunces, Georgia, serif;
+	font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+	font-weight: 400;
+	color: var(--rr-charcoal);
+}
+
+.subintro {
+	margin: 0 0 2rem;
+	color: var(--rr-river);
+	font-size: 1.05rem;
+}
+
+.note {
+	margin: 0;
+	font-size: 0.925rem;
+	color: var(--rr-river);
+	line-height: 1.6;
+}
+
+.moreLink {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.2rem;
+	color: var(--rr-cedar);
+	font-weight: 500;
+	text-decoration: none;
+	border-bottom: 1px solid currentColor;
+}
+
+.moreLink:hover {
+	color: var(--rr-forest);
+}

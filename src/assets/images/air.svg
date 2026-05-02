@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice">
+	<defs>
+		<linearGradient id="aerial" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0%" stop-color="#5d8966"/>
+			<stop offset="100%" stop-color="#1b261c"/>
+		</linearGradient>
+	</defs>
+	<rect width="800" height="1000" fill="url(#aerial)"/>
+	<path d="M0,400 Q200,360 400,420 T800,400 L800,460 Q600,500 400,460 T0,460 Z" fill="#7a8c98" opacity="0.7"/>
+	<rect x="340" y="600" width="120" height="80" fill="#b8804a" opacity="0.85"/>
+	<text x="400" y="510" font-family="Georgia, serif" font-size="22" fill="#f5f0e8" text-anchor="middle" letter-spacing="4" opacity="0.85">AERIAL PLACEHOLDER</text>
+</svg>

@@ -1,0 +1,100 @@
+.root {
+	margin-top: 1.25rem;
+	padding: 1.25rem;
+	border: 1px solid var(--rr-fog);
+	border-radius: 12px;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.heading {
+	margin: 0 0 0.3rem;
+	font-size: 0.78rem;
+	font-weight: 500;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--rr-river);
+}
+
+.intro {
+	margin: 0 0 1rem;
+	font-size: 0.85rem;
+	color: var(--rr-charcoal);
+	line-height: 1.5;
+}
+
+.grid {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.button {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.85rem;
+}
+
+.buttonIcon {
+	flex-shrink: 0;
+	width: 36px;
+	height: 36px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	background: rgba(47, 62, 50, 0.07);
+	color: var(--rr-cedar);
+	margin-top: 1px;
+}
+
+.buttonText {
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
+}
+
+.buttonLabel {
+	font-size: 0.85rem;
+	font-weight: 600;
+	color: var(--rr-charcoal);
+}
+
+.buttonDesc {
+	font-size: 0.85rem;
+	color: var(--rr-charcoal);
+	line-height: 1.5;
+}
+
+.arrowInline {
+	display: inline-flex;
+	align-items: center;
+	gap: 1px;
+	vertical-align: middle;
+	color: var(--rr-cedar);
+}
+
+.pressList {
+	margin: 0.4rem 0 0;
+	padding-left: 1.25rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+	font-size: 0.85rem;
+	color: var(--rr-charcoal);
+	line-height: 1.5;
+}
+
+.pressList li::marker {
+	color: var(--rr-cedar);
+}
+
+.tip {
+	margin: 1rem 0 0;
+	padding: 0.75rem 1rem;
+	border-left: 3px solid var(--rr-cedar);
+	background: rgba(184, 128, 74, 0.06);
+	border-radius: 4px;
+	font-size: 0.82rem;
+	color: var(--rr-charcoal);
+	line-height: 1.5;
+}

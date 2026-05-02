@@ -1,0 +1,132 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 50;
+	padding: 1.25rem 1.5rem;
+	color: var(--rr-cream);
+	transition:
+		background-color 250ms ease,
+		color 250ms ease,
+		box-shadow 250ms ease,
+		padding 250ms ease;
+}
+
+.header.scrolled {
+	background: rgba(245, 240, 232, 0.96);
+	backdrop-filter: saturate(140%) blur(10px);
+	color: var(--rr-charcoal);
+	box-shadow: 0 1px 0 rgba(28, 28, 28, 0.06);
+	padding: 0.85rem 1.5rem;
+}
+
+.inner {
+	max-width: 1280px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1.5rem;
+}
+
+.brand {
+	font-family: Fraunces, Georgia, serif;
+	font-size: 1.35rem;
+	font-weight: 500;
+	letter-spacing: 0.01em;
+	text-decoration: none;
+	color: inherit;
+}
+
+.desktopNav {
+	align-items: center;
+}
+
+.navLink {
+	font-family: Inter, sans-serif;
+	font-size: 0.95rem;
+	font-weight: 500;
+	letter-spacing: 0.02em;
+	color: inherit;
+	position: relative;
+	padding: 0.25rem 0;
+	cursor: pointer;
+}
+
+.navLink::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -4px;
+	height: 1px;
+	background: currentColor;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 200ms ease;
+}
+
+.navLink:hover::after {
+	transform: scaleX(1);
+}
+
+.airbnb {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	color: inherit;
+	text-decoration: none;
+	transition: background-color 150ms ease;
+}
+
+.airbnb:hover {
+	background: rgba(255, 255, 255, 0.12);
+}
+
+.scrolled .airbnb:hover {
+	background: rgba(28, 28, 28, 0.06);
+}
+
+.drawerTitle {
+	font-family: Fraunces, Georgia, serif;
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+
+.drawerLink {
+	display: flex;
+	flex-direction: column;
+	gap: 0.15rem;
+	padding: 0.85rem 0.25rem;
+	border-bottom: 1px solid var(--rr-fog);
+	width: 100%;
+	text-align: left;
+	cursor: pointer;
+}
+
+.drawerLabel {
+	font-family: Fraunces, Georgia, serif;
+	font-size: 1.25rem;
+	font-weight: 500;
+	color: var(--rr-charcoal);
+}
+
+.drawerSummary {
+	font-size: 0.9rem;
+	color: var(--rr-river);
+}
+
+.drawerAirbnb {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin-top: 1rem;
+	padding: 0.85rem 0.25rem;
+	text-decoration: none;
+	color: var(--rr-forest);
+	font-weight: 500;
+}

@@ -1,0 +1,22 @@
+.link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+	padding: 0.25rem 0.6rem;
+	border-radius: 999px;
+	background: rgba(47, 62, 50, 0.08);
+	color: var(--rr-forest);
+	text-decoration: none;
+	font-size: 0.875rem;
+	font-weight: 500;
+	white-space: nowrap;
+	min-height: 32px;
+	transition: background-color 150ms ease;
+}
+
+.link:hover,
+.link:focus-visible {
+	background: rgba(47, 62, 50, 0.16);
+	color: var(--rr-forest);
+	outline: none;
+}

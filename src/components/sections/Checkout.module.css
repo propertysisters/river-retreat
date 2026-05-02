@@ -1,0 +1,45 @@
+.list {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 2.5rem;
+	display: grid;
+	gap: 0.85rem;
+	counter-reset: step;
+}
+
+.item {
+	display: flex;
+	align-items: flex-start;
+	gap: 1rem;
+	padding: 1.1rem 1.25rem;
+	background: rgba(255, 255, 255, 0.55);
+	border: 1px solid var(--rr-fog);
+	border-radius: 12px;
+}
+
+.marker {
+	flex-shrink: 0;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background: var(--rr-forest);
+	color: var(--rr-cream);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.text {
+	font-size: 1.025rem;
+	line-height: 1.6;
+	color: var(--rr-charcoal);
+}
+
+.thanks {
+	margin: 0;
+	font-family: Fraunces, Georgia, serif;
+	font-style: italic;
+	font-size: 1.2rem;
+	color: var(--rr-cedar);
+	text-align: center;
+}

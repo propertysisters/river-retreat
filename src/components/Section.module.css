@@ -1,0 +1,17 @@
+.section {
+	padding: clamp(4rem, 8vw, 7rem) 1.5rem;
+	scroll-margin-top: 84px;
+}
+
+.cream {
+	background: var(--rr-cream);
+}
+
+.fog {
+	background: var(--rr-fog);
+}
+
+.inner {
+	max-width: 1080px;
+	margin: 0 auto;
+}

@@ -1,0 +1,37 @@
+.block {
+	display: inline-flex;
+	align-items: flex-start;
+	gap: 0.65rem;
+	padding: 0.85rem 1.1rem;
+	border: 1px solid var(--rr-fog);
+	border-radius: 12px;
+	background: rgba(255, 255, 255, 0.55);
+	color: var(--rr-charcoal);
+	text-decoration: none;
+	transition:
+		border-color 150ms ease,
+		background-color 150ms ease;
+}
+
+.block:hover,
+.block:focus-visible {
+	border-color: var(--rr-forest);
+	background: rgba(255, 255, 255, 0.85);
+	color: var(--rr-charcoal);
+	outline: none;
+}
+
+.label {
+	display: block;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+.cta {
+	display: block;
+	font-size: 0.8rem;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	color: var(--rr-cedar);
+	margin-top: 0.2rem;
+}

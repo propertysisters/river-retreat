@@ -1,0 +1,131 @@
+/* Mantine core styles imported in main.tsx so PostCSS preset can hook them. */
+
+:root {
+	color-scheme: light;
+	--rr-cream: #f5f0e8;
+	--rr-charcoal: #1c1c1c;
+	--rr-fog: #e4e2db;
+	--rr-forest: #2f3e32;
+	--rr-river: #6c7a82;
+	--rr-cedar: #b8804a;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background: var(--rr-cream);
+	color: var(--rr-charcoal);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	font-family:
+		Inter,
+		-apple-system,
+		BlinkMacSystemFont,
+		"Segoe UI",
+		Roboto,
+		sans-serif;
+	font-size: 17px;
+	line-height: 1.65;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+a {
+	color: var(--rr-forest);
+	text-underline-offset: 3px;
+	text-decoration-thickness: 1px;
+}
+
+a:hover {
+	color: var(--rr-cedar);
+}
+
+.skip-link {
+	position: absolute;
+	top: -100px;
+	left: 1rem;
+	padding: 0.75rem 1.25rem;
+	background: var(--rr-charcoal);
+	color: var(--rr-cream);
+	text-decoration: none;
+	border-radius: 6px;
+	z-index: 9999;
+	transition: top 150ms ease;
+}
+
+.skip-link:focus {
+	top: 1rem;
+}
+
+.fade-in {
+	opacity: 0;
+	transform: translateY(16px);
+	transition:
+		opacity 700ms ease,
+		transform 700ms ease;
+}
+
+.fade-in.is-visible {
+	opacity: 1;
+	transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.fade-in,
+	.fade-in.is-visible {
+		transition: none;
+		opacity: 1;
+		transform: none;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.001ms !important;
+		transition-duration: 0.001ms !important;
+	}
+}
+
+@media print {
+	body {
+		background: white;
+		color: black;
+		font-size: 12pt;
+	}
+
+	header,
+	nav,
+	footer,
+	.no-print,
+	.hero-media {
+		display: none !important;
+	}
+
+	a {
+		color: black;
+		text-decoration: underline;
+	}
+
+	a[href^="http"]::after {
+		content: " (" attr(href) ")";
+		font-size: 0.85em;
+	}
+
+	section {
+		break-inside: avoid;
+		page-break-inside: avoid;
+	}
+}

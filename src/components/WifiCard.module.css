@@ -1,0 +1,63 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding: 1.5rem;
+	border: 1px solid var(--rr-fog);
+	border-radius: 14px;
+	background: rgba(255, 255, 255, 0.6);
+}
+
+.header {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-family: Fraunces, Georgia, serif;
+	font-size: 1.1rem;
+	color: var(--rr-forest);
+	margin-bottom: 0.25rem;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 0.5rem 0;
+}
+
+.label {
+	font-size: 0.8rem;
+	font-weight: 500;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	color: var(--rr-river);
+}
+
+.value {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	background: none;
+	border: none;
+	padding: 0.5rem 0.75rem;
+	cursor: pointer;
+	border-radius: 8px;
+	transition: background-color 150ms ease;
+	font: inherit;
+	color: inherit;
+	min-height: 44px;
+}
+
+.value:hover,
+.value:focus-visible {
+	background: rgba(47, 62, 50, 0.06);
+	outline: none;
+}
+
+.code {
+	font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+	font-size: 1rem;
+	color: var(--rr-charcoal);
+	letter-spacing: 0.02em;
+}
