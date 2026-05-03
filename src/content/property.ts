@@ -1,16 +1,13 @@
 export const property = {
 	name: "River Retreat",
-	tagline: "A family cabin in the mountains",
+	tagline: "A family cabin in the mountains on the river",
 	location: "Packwood, WA",
-	// TODO: replace with the real street address
-	address: "",
+	address: "225 Eagle Peak Dr, Packwood, WA 98361",
 	mapsQuery: "River Retreat Packwood WA",
 	wifi: {
-		// TODO: real network + password
 		network: "River Retreat",
-		password: "changeme",
+		password: "cowlitzriver",
 	},
-	// TODO: real Airbnb listing URL
-	airbnbUrl: "https://www.airbnb.com/",
+	airbnbUrl: "https://www.airbnb.com/rooms/1255290015888666214",
 	copyrightHolder: "Property Sisters",
 };
