@@ -1,3 +1,14 @@
+.policy {
+	margin: 0 0 2rem;
+	font-size: 0.95rem;
+	line-height: 1.6;
+	color: var(--rr-charcoal);
+	padding: 0.9rem 1.25rem;
+	background: rgba(255, 255, 255, 0.45);
+	border-left: 3px solid var(--rr-cedar);
+	border-radius: 0 8px 8px 0;
+}
+
 .list {
 	list-style: none;
 	padding: 0;

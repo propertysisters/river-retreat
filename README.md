@@ -36,17 +36,6 @@ All guest-facing text lives in [`src/content/`](src/content/):
 | `restaurants.ts` | Restaurant listings (name, phone, description)                |
 | `navigation.ts`  | Nav item labels and tooltips                                  |
 
-## Adding photos
-
-Drop new images into `src/assets/images/` and import them in the relevant component. Placeholder SVGs are in place — replace with real photos:
-
-- `cover.svg` → replace with hero image (best exterior shot)
-- `river.svg` → used in the Welcome section
-- `hottub.svg` → used in the Amenities section
-- `air.svg` → used in the Activities section
-
-Once you swap to JPGs, update the imports in `Hero.tsx`, `Welcome.tsx`, `Amenities.tsx`, and `Activities.tsx`.
-
 ## Deploy
 
 Deployment is automatic: push to `main` and GitHub Actions builds and deploys.

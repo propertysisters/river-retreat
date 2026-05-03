@@ -14,7 +14,7 @@ import {
 	type IconProps,
 } from "@tabler/icons-react";
 import type { ComponentType } from "react";
-import hottubImage from "../../assets/images/hottub.svg";
+import hottubImage from "../../assets/images/hottub.jpg";
 import { amenities, type Amenity, type AmenityIcon } from "../../content/amenities";
 import { FireplaceRemote } from "../FireplaceRemote";
 import { Section } from "../Section";

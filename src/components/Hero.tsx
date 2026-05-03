@@ -1,4 +1,4 @@
-import coverImage from "../assets/images/cover.svg";
+import coverImage from "../assets/images/cover.jpg";
 import { property } from "../content/property";
 import classes from "./Hero.module.css";
 

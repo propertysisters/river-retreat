@@ -1,5 +1,5 @@
 import { IconArrowUpRight } from "@tabler/icons-react";
-import airImage from "../../assets/images/air.svg";
+import airImage from "../../assets/images/air.jpg";
 import { activities, safetyNote } from "../../content/activities";
 import { Section } from "../Section";
 import { SectionHeader } from "../SectionHeader";

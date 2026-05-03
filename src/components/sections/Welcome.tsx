@@ -1,4 +1,4 @@
-import riverImage from "../../assets/images/river.svg";
+import riverImage from "../../assets/images/river.jpg";
 import {
 	guideSummary,
 	welcomeIntro,

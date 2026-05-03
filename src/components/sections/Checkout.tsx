@@ -1,5 +1,5 @@
 import { IconCheck } from "@tabler/icons-react";
-import { checklistFooter, checkoutItems } from "../../content/checklist";
+import { checklistFooter, checkoutItems, checkoutNote } from "../../content/checklist";
 import { Section } from "../Section";
 import { SectionHeader } from "../SectionHeader";
 import classes from "./Checkout.module.css";
@@ -12,6 +12,8 @@ export function Checkout() {
 				title="Before you head out"
 				intro="A short checklist to leave the cabin ready for the next family. No need to deep-clean — these are the small things that make a big difference."
 			/>
+
+			<p className={classes.policy}>{checkoutNote}</p>
 
 			<ol className={classes.list}>
 				{checkoutItems.map((item, idx) => (
